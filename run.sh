@@ -9,6 +9,6 @@ if [[ $initialize = yes ]]; then
   devpi use http://localhost:3141
   devpi login root --password=''
   devpi user -m root password="${DEVPI_PASSWORD}"
-  devpi index -c public
+  devpi index -y -c public pypi_whitelist=\*
 fi
 tail -f $DEVPI_SERVERDIR/.xproc/devpi-server/xprocess.log
