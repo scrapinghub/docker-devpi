@@ -7,4 +7,4 @@ RUN pip install -U devpi==2.0.1 devpi-server==2.0.4 requests==2.3.0
 VOLUME /mnt
 EXPOSE 3141
 ADD run.sh /
-ENTRYPOINT ["/run.sh"]
+CMD ["/run.sh"]
