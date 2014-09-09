@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+set -x
 export DEVPI_SERVERDIR=/mnt
 export DEVPI_CLIENTDIR=/tmp/devpi-client
 [[ -f $DEVPI_SERVERDIR/.serverversion ]] || initialize=yes
